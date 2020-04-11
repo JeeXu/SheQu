@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    height: 100vh;
+    background-image: linear-gradient(to right, #fbc2eb, #a6c1ee);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-wrapper {
+    background-color: #fff;
+    width: 350px;
+    height: 500px;
+    border-radius: 15px;
+    padding: 0 20px;
+}
+
+.login-wrapper .header {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 170px;
+}
+
+.login-wrapper .form-wrapper .input-item {
+    display: block;
+    width: 100%;
+    border: 0;
+    margin-bottom: 20px;
+    padding: 18px;
+    border-bottom: 2px solid rgb(128, 125, 125);
+    font-size: 15px;
+    outline: none;
+}
+
+.login-wrapper .form-wrapper .input-item::placeholder {
+    text-transform: uppercase;
+}
+
+.login-wrapper .form-wrapper .btn {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: 30px;
+    background-image: linear-gradient(to right, #a6c1ee, #fbc2eb);
+    color: #fff;
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.login-wrapper .form-wrapper .btn::after {
+    content: "";
+    background-image: linear-gradient(to right, #fbc2eb, #a6c1ee);
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+.login-wrapper .form-wrapper .btn:active::after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+}
+
+.login-wrapper .msg {
+    text-align: center;
+    line-height: 80px;
+}
+
+.login-wrapper .msg a {
+    text-decoration: none;
+    color: #a6c1ee;
+}

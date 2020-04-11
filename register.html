@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="icon" href="img/favicon-32x32.png" sizes="32x32" type="image/png" />
+    <script>
+        function check_login(form) {
+            if (form.register_username.value.trim() == '') {
+                alert("请输入用户名");
+                form.register_username.focus();
+                return false;
+            }
+            if (form.register_password.value.trim() == '') {
+                alert("请输入注册密码");
+                form.register_password.focus();
+                return false;
+            }
+            if (form.register_password.value.length < 6) {
+                alert("密码小于6位！");
+                form.register_password.focus();
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-wrapper">
+            <div class="header">Sign up</div>
+            <div class="form-wrapper">
+                <form action="./php/register.php" method="POST" onsubmit="return check_login(this)">
+                    <input class="input-item" type="text" name="register_username" placeholder="Enter Your Name" />
+                    <input class="input-item" type="password" name="register_password"
+                        placeholder="Enter Your Password" />
+                    <input class="input-item" type="text" name="register_passport" placeholder="通行证" />
+                    <button type="submit" class="btn">Register</button>
+                </form>
+            </div>
+            <div class="msg">
+                I have the account!<a href="login.html">Sign in</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

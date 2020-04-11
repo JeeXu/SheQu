@@ -1,0 +1,216 @@
+/* 阿里巴巴矢量图标 */
+
+@font-face {
+  font-family: 'iconfont';
+  /* project id 1738660 */
+  src: url('https://at.alicdn.com/t/font_1738660_cuxlqpqhtba.eot');
+  src: url('https://at.alicdn.com/t/font_1738660_cuxlqpqhtba.eot?#iefix') format('embedded-opentype'), url('https://at.alicdn.com/t/font_1738660_cuxlqpqhtba.woff2') format('woff2'), url('https://at.alicdn.com/t/font_1738660_cuxlqpqhtba.woff') format('woff'), url('https://at.alicdn.com/t/font_1738660_cuxlqpqhtba.ttf') format('truetype'), url('https://at.alicdn.com/t/font_1738660_cuxlqpqhtba.svg#iconfont') format('svg');
+}
+
+/* 阿里巴巴矢量图标 */
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  color: gray;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 0.875rem;
+}
+
+pre {
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  /* Behind the navbar */
+  padding: 48px 0 0;
+  /* Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* Scrollable contents if viewport is shorter than content. */
+}
+
+.sidebar-sticky .nav-item {
+  cursor: pointer;
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #999;
+}
+
+.sidebar .nav-link.active {
+  color: #007bff;
+}
+
+.sidebar .nav-link:hover .feather, .sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+/*
+ * Content
+ */
+
+[role="main"] {
+  padding-top: 133px;
+  /* Space for fixed navbar */
+}
+
+@media (min-width: 768px) {
+  [role="main"] {
+    padding-top: 48px;
+    /* Space for fixed navbar */
+  }
+}
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.25);
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
+}
+
+.table-responsive {
+  box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.2), -1px -5px 8px rgba(0, 0, 0, 0.19);
+  margin-bottom: 20px;
+}
+
+.box {
+  margin-top: 20px;
+  background: #f6f6f6;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.cate2 .box {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.cate2 .card small {
+  position: relative;
+  float: right;
+}
+
+.cate2 .card pre {
+  white-space: pre-wrap;
+}
+
+.cate2 .card-body button {
+  position: initial;
+  float: right;
+}
+
+.cate3 .card {
+  margin: 10px;
+}
+
+.cate3 .side-msg {
+  background: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.cate5 .card-text button {
+  position: initial;
+  float: right;
+}
+
+#ditu {
+  margin: 30px 20px 30px 20px;
+  border-radius: 5px;
+  box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.2), -1px -5px 8px rgba(0, 0, 0, 0.19);
+}
+
+form label {
+  margin-left: 10px;
+}
+
+.box .card {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.1), -1px -4px 4px rgba(0, 0, 0, 0.09);
+}
+
+.box .card span {
+  margin-left: 10px;
+}
+
+.box .row .card {
+  margin: 0px 15px 10px 15px;
+}
+
+pre.card-text {
+  letter-spacing: 1px;
+}
